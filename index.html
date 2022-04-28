@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - asegura tus textos</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Encriptador/img/iconfinder-lock-4341303_120563.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">Encriptador by Juan Barraza</h1>
+    </header>
+
+    <main class="contenido-principal contenedor">
+        <section class="contenedor-descriptar">
+            <div class="input">
+                <textarea name="" id="ingrese-text" class="input-text" cols="30" rows="10" placeholder="ingrese su texto aquí"></textarea>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar">Encriptar!</button>
+                <button class="boton-desencriptar">Desencriptar!</button>
+            </div>
+        </section>
+       
+        <section class="contenedor-resultado">
+            <div class="mesaje-salida">
+                <span class="aviso-texto">Solo letras minúsculas y sin acentos</span>
+                <textarea readonly name="resultado" placeholder="Ningún mensaje fue encontrado" id="salida" cols="30" rows="10"></textarea>
+            </div>
+            <div class="copiar">
+                <button class="btn-copiar">Copiar texto</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="texto-footer">si deseas ver el codigo utilizado, <a href="#">haz clic aqui</a></p>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+</html>
